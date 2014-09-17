@@ -13,7 +13,8 @@ config :eliflow,
   listen_ip: {0,0,0,0},
   listen_port: 6653,
   listen_opts: [:binary, {:packet, :raw}, {:active, :false}, {:reuseaddr, true}],
-  ofp_version: [3, 4]
+  ofp_version: [3, 4],
+  callback_module: Eliflow.DefaultHandler
 
 config :logger, :console,
   level: :debug,
