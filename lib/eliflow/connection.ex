@@ -1,6 +1,6 @@
 # coding: utf-8
 
-defmodule Eliflow.ConnectionSup do
+defmodule Eliflow.Connection do
   use Supervisor
 
   import Eliflow.Logger

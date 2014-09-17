@@ -48,7 +48,7 @@ defmodule Eliflow.Listener do
   def accept(lsocket) do
     case :gen_tcp.accept(lsocket) do
       {:ok, socket} ->
-        case Eliflow.ConnectionSup.start_child(socket) do
+        case Eliflow.Connection.start_child(socket) do
           {:ok, connect_controll_pid} ->
             :gen_tcp.controlling_process(socket, connect_controll_pid)
           {:error, _reason} ->

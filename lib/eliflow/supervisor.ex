@@ -12,7 +12,7 @@ defmodule Eliflow.Supervisor do
 
   def init([]) do
     debug("Starting Eliflow.")
-    children = [supervisor(Eliflow.ConnectionSup, []), worker(Eliflow.Listener, [])]
+    children = [supervisor(Eliflow.Connection, []), worker(Eliflow.Listener, [])]
     supervise(children, strategy: :one_for_one)
   end
 end
