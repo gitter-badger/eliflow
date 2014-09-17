@@ -1,0 +1,10 @@
+/_build
+/rel
+/log
+/deps
+.bundle
+/priv
+erl_crash.dump
+mix.lock
+*.lock
+*.ez
