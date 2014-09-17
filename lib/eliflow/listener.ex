@@ -3,7 +3,6 @@
 defmodule Eliflow.Listener do
   import Record
 
-  import Eliflow.Logger
   import Eliflow.Utils
 
   use GenServer

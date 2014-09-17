@@ -3,7 +3,6 @@
 defmodule Eliflow.Connection.Worker do
   import Record
 
-  import Eliflow.Logger
   import Eliflow.Utils
 
   def start_link(socket) do

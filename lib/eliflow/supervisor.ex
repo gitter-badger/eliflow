@@ -3,7 +3,7 @@
 defmodule Eliflow.Supervisor do
   use Supervisor
 
-  import Eliflow.Logger
+  import Eliflow.Utils
   import Supervisor.Spec, warn: false
 
   def start_link do

@@ -1,6 +1,20 @@
 # coding: utf-8
 
 defmodule Eliflow.Utils do
+  require Logger
+
+  def info(msg) do
+    Logger.info(msg)
+  end
+
+  def debug(msg) do
+    Logger.debug(msg)
+  end
+
+  def error(msg) do
+    Logger.error(msg)
+  end
+
   def setopts(:tcp, socket, opts) do
     :inet.setopts(socket, opts)
   end
