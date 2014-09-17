@@ -17,7 +17,7 @@ config :eliflow,
 
 config :logger, :console,
   level: :debug,
-	handle_sasl_reports: true,
+  handle_sasl_reports: true,
   format: "$date $time [$level] $metadata$message\n",
   metadata: [:user_id]
 
