@@ -1,4 +1,4 @@
-.PHONY: release compile get-deps clean deep-clean
+.PHONY: release compile get-deps test clean deep-clean
 
 release: compile
 	mix release
@@ -12,6 +12,9 @@ compile: get-deps
 
 get-deps:
 	mix deps.get
+
+test:
+	mix test
 
 clean:
 	mix clean
